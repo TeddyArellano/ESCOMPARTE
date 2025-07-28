@@ -1,0 +1,101 @@
+/* ProductsSection styles */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --border-color: #e0e0e0;
+}
+
+.escomparte__section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.escomparte__products {
+  padding: 3rem 3rem;
+  background-color: #f4f7f9;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.escomparte__product-container {
+  position: relative;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.escomparte__product-list {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 1rem 0.5rem;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px; /* Add space for scrollbar */
+}
+
+.escomparte__product-list::-webkit-scrollbar {
+  height: 8px;
+  background: transparent;
+}
+
+.escomparte__product-list::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+.escomparte__loading,
+.escomparte__error {
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.escomparte__error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.escomparte__product-link {
+  text-decoration: none;
+  color: inherit;
+  flex: 0 0 auto;
+  width: 280px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.escomparte__product-link:hover {
+  transform: translateY(-5px);
+}
+
+.escomparte__view-all {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.escomparte__button--secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.escomparte__button--secondary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .escomparte__section-title {
+    font-size: 1.8rem;
+    padding-left: 1rem;
+  }
+}

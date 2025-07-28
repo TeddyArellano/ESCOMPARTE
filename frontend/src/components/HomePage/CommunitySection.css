@@ -1,0 +1,96 @@
+/* CommunitySection styles */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --border-color: #e0e0e0;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Noto Sans', sans-serif;
+}
+
+.escomparte__community {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.escomparte__community-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.escomparte__community .escomparte__section-title {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.escomparte__community .escomparte__text {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.escomparte__community-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.escomparte__community-feature {
+  flex: 1 1 250px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.escomparte__community-feature:hover {
+  transform: translateY(-5px);
+}
+
+.escomparte__community-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.escomparte__community-feature h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-color);
+  font-family: var(--font-heading);
+}
+
+.escomparte__community-feature p {
+  color: var(--secondary-color);
+  line-height: 1.5;
+}
+
+.escomparte__community .escomparte__button {
+  padding: 0.8rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .escomparte__community {
+    padding: 3rem 0;
+  }
+  
+  .escomparte__community-features {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .escomparte__community-feature {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}

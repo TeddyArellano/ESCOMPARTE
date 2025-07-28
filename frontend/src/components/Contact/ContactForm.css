@@ -1,0 +1,199 @@
+/* Estilos para el formulario de contacto */
+:root {
+  --primary-blue: #00507b;
+  --primary-blue-light: #0077b6;
+  --primary-blue-dark: #003857;
+  --accent-color: #ffc107;
+  --text-color: #333333;
+  --text-light: #6c757d;
+  --background-light: #f8f9fa;
+  --border-color: #e0e0e0;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Noto Sans', sans-serif;
+}
+
+.contact-form-section {
+  padding: 0;
+  background-color: var(--background-light);
+  width: 100%;
+}
+
+.contact-form-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  padding: 2.5rem;
+}
+
+.contact-form-title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact-form-description {
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+label {
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+.required {
+  color: #dc3545;
+}
+
+input, select, textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: white;
+  background-color: var(--primary-blue-dark);
+  transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.3);
+  background-color: var(--primary-blue);
+}
+
+/* Estilo para placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Estilos específicos para selects */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  background-size: 1em;
+  padding-right: 2.5rem;
+}
+
+select option {
+  background-color: var(--primary-blue-dark);
+  color: white;
+}
+
+input.error, select.error, textarea.error {
+  border-color: #dc3545;
+  background-color: rgba(220, 53, 69, 0.3);
+}
+
+.contact-form-button {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.contact-form-button:hover {
+  background-color: var(--primary-blue-light);
+}
+
+.contact-form-button:active {
+  transform: translateY(1px);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+/* Mensajes de error y éxito */
+.form-error-message {
+  background-color: rgba(220, 53, 69, 0.1);
+  border-left: 4px solid #dc3545;
+  padding: 1rem;
+  border-radius: 4px;
+  color: #dc3545;
+}
+
+.form-info-message {
+  background-color: rgba(0, 119, 182, 0.1);
+  border-left: 4px solid var(--primary-blue);
+  padding: 1rem;
+  border-radius: 4px;
+  color: var(--primary-blue);
+}
+
+.form-success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.form-success-message svg {
+  color: #28a745;
+  margin-bottom: 1.5rem;
+}
+
+.form-success-message p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 1.5rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contact-form-title {
+    font-size: 1.5rem;
+  }
+}

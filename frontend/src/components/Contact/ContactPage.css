@@ -1,0 +1,193 @@
+/* Estilos para la página de contacto */
+:root {
+  --primary-blue: #00507b;
+  --primary-blue-light: #0077b6;
+  --primary-blue-dark: #003857;
+  --accent-color: #ffc107;
+  --text-color: #333333;
+  --text-light: #6c757d;
+  --background-light: #f8f9fa;
+  --border-color: #e0e0e0;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Noto Sans', sans-serif;
+}
+
+.contact-page {
+  width: 100%;
+  padding: 0;
+  font-family: var(--font-body);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hero section */
+.contact-hero {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-hero h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Layout principal de contenido */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1.5rem 4rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .contact-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .contact-info {
+    flex: 1;
+  }
+  
+  .contact-form-wrapper {
+    flex: 2;
+  }
+}
+
+/* Tarjetas de información de contacto */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  padding: 1.5rem;
+}
+
+.contact-card h3 {
+  font-family: var(--font-heading);
+  color: var(--primary-blue);
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+}
+
+/* Lista de información de contacto */
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.contact-list .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(0, 80, 123, 0.1);
+  border-radius: 50%;
+  color: var(--primary-blue);
+  flex-shrink: 0;
+}
+
+/* Horarios */
+.hours-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-blue);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.social-link:hover {
+  background-color: var(--primary-blue-light);
+  transform: translateY(-2px);
+}
+
+.social-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .contact-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-hero p {
+    font-size: 1rem;
+  }
+  
+  .contact-content {
+    padding: 0 1rem 3rem;
+  }
+  
+  .contact-card {
+    padding: 1.2rem;
+  }
+}

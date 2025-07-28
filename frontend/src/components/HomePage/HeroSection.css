@@ -1,0 +1,86 @@
+/* HeroSection styles */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --border-color: #e0e0e0;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Noto Sans', sans-serif;
+}
+
+.escomparte__hero {
+  position: relative;
+  height: 500px;
+  background-image: url('/src/assets/images/hero-background.png');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.escomparte__hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.escomparte__hero-content {
+  max-width: 800px;
+  color: white;
+}
+
+.escomparte__hero-title {
+  font-size: 4.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+}
+
+.escomparte__hero-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-family: var(--font-body);
+}
+
+.escomparte__hero .escomparte__button {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .escomparte__hero {
+    height: 400px;
+  }
+  
+  .escomparte__hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .escomparte__hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .escomparte__hero {
+    height: 350px;
+  }
+  
+  .escomparte__hero-title {
+    font-size: 1.8rem;
+  }
+}

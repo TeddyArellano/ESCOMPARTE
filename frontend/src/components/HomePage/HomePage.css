@@ -1,0 +1,77 @@
+/* Estilos base */
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', 'Noto Sans', sans-serif;
+}
+
+.escomparte {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --border-color: #e0e0e0;
+  
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow-x: hidden; /* Prevenimos scroll horizontal */
+  display: flex;
+  flex-direction: column;
+}
+
+.escomparte__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content styles */
+.escomparte__main {
+  padding: 2rem 0;
+  width: 100%;
+}
+
+/* Button styles */
+.escomparte__button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.escomparte__button--primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.escomparte__button--primary:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+.escomparte__button--icon {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estos estilos genéricos pueden ser útiles para todos los componentes */
+.escomparte__section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.escomparte__text {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: var(--text-color);
+}

@@ -1,0 +1,52 @@
+/* CategorySection styles */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --border-color: #e0e0e0;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Noto Sans', sans-serif;
+}
+
+.escomparte__categories {
+  padding: 2rem 3rem;
+  background-color: #f9f9f9;
+}
+
+.escomparte__category-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.escomparte__category-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.escomparte__category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.escomparte__category-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  padding: 15px;
+  background-color: #f8f9fa;
+}
+
+.escomparte__category-title {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-family: var(--font-heading);
+}

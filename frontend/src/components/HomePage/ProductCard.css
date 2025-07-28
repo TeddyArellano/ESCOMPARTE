@@ -1,0 +1,96 @@
+/* ProductCard styles */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --border-color: #e0e0e0;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Noto Sans', sans-serif;
+}
+
+.escomparte__product-card {
+  flex: 0 0 280px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  scroll-snap-align: start;
+}
+
+.escomparte__product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.escomparte__product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  padding: 10px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease;
+}
+
+.escomparte__product-card:hover .escomparte__product-image {
+  transform: scale(1.05);
+}
+
+.escomparte__product-info {
+  padding: 1.2rem;
+  border-top: 1px solid #f0f0f0;
+  background-color: white;
+}
+
+.escomparte__product-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-family: var(--font-heading);
+}
+
+.escomparte__product-description {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.escomparte__product-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #00507b;
+  margin: 0.5rem 0;
+}
+
+.escomparte__product-card .escomparte__button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.escomparte__product-card .escomparte__button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .escomparte__product-card {
+    flex: 0 0 250px;
+  }
+  
+  .escomparte__product-title {
+    font-size: 1rem;
+  }
+}

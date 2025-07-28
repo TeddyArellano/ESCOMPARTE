@@ -1,0 +1,15 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8f9fa" />
+  <path d="M180 125.5H220V175.5H180V125.5Z" stroke="#00507b" stroke-width="2" />
+  <path d="M160 145.5H180V155.5H160V145.5Z" stroke="#00507b" stroke-width="2" />
+  <path d="M220 145.5H240V155.5H220V145.5Z" stroke="#00507b" stroke-width="2" />
+  <circle cx="170" cy="170.5" r="5" stroke="#00507b" stroke-width="2" />
+  <circle cx="230" cy="170.5" r="5" stroke="#00507b" stroke-width="2" />
+  <path d="M175 170.5H225" stroke="#00507b" stroke-width="2" />
+  <text fill="#00507b" font-family="Arial" font-size="10" font-weight="bold" x="145" y="105">
+    ESCOMPARTE
+  </text>
+  <text fill="#6c757d" font-family="Arial" font-size="8" x="155" y="200">
+    Componente electrónico
+  </text>
+</svg>
