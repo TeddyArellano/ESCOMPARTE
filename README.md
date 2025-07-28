@@ -26,8 +26,6 @@ La plataforma permite a los usuarios registrar productos para su venta, intercam
 - **Sistema de filtrado** por categorías, precio y disponibilidad
 - **Perfiles de vendedor y comprador** para facilitar el intercambio
 
-![Catálogo de Productos](./screenshots/catalogo.png)
-
 ---
 
 ## 💻 Tecnologías Utilizadas
@@ -48,12 +46,7 @@ La plataforma permite a los usuarios registrar productos para su venta, intercam
 - **Sharp**: Optimización de imágenes
 
 ### Herramientas de Desarrollo
-- **Git & GitHub**: Control de versiones
-- **Jest**: Framework para pruebas unitarias
-- **ESLint**: Linting de código JavaScript
-- **Nodemon**: Reinicio automático del servidor durante desarrollo
-
-![Detalles de Producto](./screenshots/detalles.png)
+- **Git & GitHub**
 
 ---
 
@@ -78,9 +71,6 @@ escomparte/
 │   ├── db/           # Configuración de base de datos
 │   └── public/       # Almacenamiento de archivos subidos
 ```
-
-![Panel de Usuario](./screenshots/panel-usuario.png)
-
 ---
 
 ## 🎯 Objetivo del Proyecto
@@ -93,8 +83,6 @@ El objetivo principal de ESCOMPARTE es fomentar una cultura de colaboración y s
 4. **Creación de una red de intercambio** específica para la comunidad ESCOM
 5. **Promoción de proyectos estudiantiles** a través de la plataforma
 
-![Proceso de Venta](./screenshots/venta.png)
-
 ---
 
 ## 📱 Capturas de Pantalla
@@ -103,16 +91,16 @@ El objetivo principal de ESCOMPARTE es fomentar una cultura de colaboración y s
 ![Página Principal](./screenshots/home.png)
 
 ### Catálogo de Productos
-![Catálogo](./screenshots/catalogo-completo.png)
+![Catálogo de Productos](./screenshots/catalogo.png)
 
-### Detalle de Producto
-![Detalle](./screenshots/detalle-producto.png)
+### Detalles de Producto
+![Detalles de Producto](./screenshots/detalles.png)
 
 ### Carrito de Compras
 ![Carrito](./screenshots/carrito.png)
 
 ### Panel de Usuario
-![Panel](./screenshots/dashboard.png)
+![Panel de Usuario](./screenshots/panel-usuario.png)
 
 ---
 
