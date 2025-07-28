@@ -42,8 +42,6 @@ La plataforma permite a los usuarios registrar productos para su venta, intercam
 - **Express**: Framework para aplicaciones web
 - **PostgreSQL**: Base de datos relacional
 - **JWT**: Autenticación basada en tokens
-- **Multer**: Manejo de subida de archivos e imágenes
-- **Sharp**: Optimización de imágenes
 
 ### Herramientas de Desarrollo
 - **Git & GitHub**
@@ -104,15 +102,9 @@ El objetivo principal de ESCOMPARTE es fomentar una cultura de colaboración y s
 
 ---
 
-## 👨‍💻 Desarrollado por
-
-Este proyecto fue desarrollado como parte del programa académico de la Escuela Superior de Cómputo (ESCOM) del Instituto Politécnico Nacional (IPN), con el objetivo de aplicar conocimientos en desarrollo web y crear una solución real para la comunidad estudiantil.
-
----
-
 ## 📄 Licencia
 
-Este proyecto fue creado con fines educativos y está disponible para uso interno de la comunidad ESCOM-IPN.
+Este proyecto fue desarrollado como parte del programa académico de la Escuela Superior de Cómputo (ESCOM) del Instituto Politécnico Nacional (IPN), con el objetivo de aplicar conocimientos en desarrollo web y crear una solución real para la comunidad estudiantil.
 
 ---
 
